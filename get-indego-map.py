@@ -31,8 +31,6 @@ def main(config):
         svg.append(mower_circle)
         svg.save("updatedmap.svg")
 
-        print(f'Charging: {indego.state.charge}')
-
 if __name__ == "__main__":
     with open("config.json", "r") as config_file:
         config = json.load(config_file)
