@@ -10,7 +10,7 @@ def main(config):
     with IndegoClient(**config) as indego:
 
         print(f'Updating mower state...')
-        indego.update_state()
+        indego.update_state(force=True)
 
         mapupdate = indego.state.map_update_available
         mapname = 'indegobasemap.svg'
